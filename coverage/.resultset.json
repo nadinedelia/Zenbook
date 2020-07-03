@@ -621,6 +621,15 @@
           null,
           1,
           null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
           null
         ]
       },
@@ -650,7 +659,7 @@
           null,
           null,
           1,
-          12,
+          14,
           null,
           null,
           1,
@@ -684,6 +693,41 @@
         "lines": [
           1,
           1,
+          null,
+          1,
+          null,
+          1,
+          1,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/chriscooney/projects/makers/acebook-TeamNameComingSoon-rails/spec/features/login_out_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
           null
         ]
       },
@@ -777,8 +821,39 @@
           1,
           null
         ]
+      },
+      "/Users/chriscooney/projects/makers/acebook-TeamNameComingSoon-rails/app/controllers/registrations_controller.rb": {
+        "lines": [
+          1,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          2,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          0,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
       }
     },
-    "timestamp": 1593698046
+    "timestamp": 1593788090
   }
 }
