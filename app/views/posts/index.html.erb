@@ -1,6 +1,6 @@
 
 <div class="container text-center">
-
+<%# button to the new_post form  %>
 <%= link_to new_post_path do %>
 <button class="btn btn-sm btn-primary pull-right">
   New post
@@ -11,20 +11,27 @@
 <br>
 <br>
 
-<div class="panel">
-  <div class="panel-body">
-    <div class="media-block">
+<div class="line">
+  <%# interate the whole data base and render it on the webpage %>
       <% @posts.each do |post| %>
+      <%# needed for center position %>
         <div class="media-body">
-          <div class="panel">
+          <div class="line">
           <p class="text-muted text-sm">
+          <%# time create for post on the database column "creaate_at", with format %>
           <%= post.created_at.strftime("%d %b %y") %> 
           </p>
+          <%# each message element from the database message column %>
           <p> <%= post.message %> </p> 
+
+          <%# grey small text showing date %>
           <p class="text-muted text-sm">
+          <%# having a link to delete the post %>
           <%= link_to 'Delete', post_path(post), 
                         method: :delete, 
+                        # data here is just a pop up message 
                         data: { confirm: 'Are you sure?' } %>
+   <%# condition statement for edit post with in 10 minutes window %>
             <% if post.created_at >= Time.now - 10*60 %>
               <%= link_to 'Edit', edit_post_path(post) %>
             <% end %>
