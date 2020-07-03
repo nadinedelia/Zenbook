@@ -1,8 +1,9 @@
 class PostsController < ApplicationController
+  
   def new
     @post = Post.new
   end
-  # render the form new.html.erb
+  # GET REQUEST. render the form new.html.erb
   
   def create
     @post = Post.create(post_params)
@@ -39,6 +40,8 @@ class PostsController < ApplicationController
   def edit
     @post = Post.find(params[:id])
   end
+
+  # GET ROUTE
   # Post.find(4)
   # Post Load (0.3ms)  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2  [["id", 4], ["LIMIT", 1]]
 
@@ -60,5 +63,3 @@ class PostsController < ApplicationController
     params.require(:post).permit(:message)
   end
 end
-
-# how to create a post locally in the console?
