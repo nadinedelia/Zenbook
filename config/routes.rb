@@ -8,6 +8,7 @@ Rails.application.routes.draw do
   end
 
   resources :posts
+  # making the entire CRUD structure routes for post
 
   root 'posts#index'
 end
