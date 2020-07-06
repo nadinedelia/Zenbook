@@ -1,14 +1,30 @@
 class PostsController < ApplicationController
-  
+  # this will ensure only users who are in session can access post contrller routes
+  before_action :authenticate_user!
+
+
   def new
-    @post = Post.new
+    @post = current_user.posts.build
   end
+  # def new
+  #   @post = Post.new
+  # end
   # GET REQUEST. render the form new.html.erb
   
   def create
-    @post = Post.create(post_params)
-    redirect_to posts_url
+    @post = current_user.posts.build(post_params)
+
+    if @post.save
+      redirect_to posts_path
+    else
+      render :new
+    end
   end
+  # def create
+  #   @post = Post.create(post_params)
+  #   redirect_to posts_url
+  # end
+
   # p = Post.create(message: 'hello Minsi')
   #  (0.4ms)  BEGIN
   # SQL (3.9ms)  INSERT INTO "posts" ("message", "created_at", "updated_at") 
@@ -21,10 +37,9 @@ class PostsController < ApplicationController
   end
   # SELECT  "posts".* FROM "posts" LIMIT $1 
   # render index.erb page to display all the posts
-  
 
   def destroy
-    @post = Post.find(params[:id])
+    @post = current_user.posts.find(params[:id])
     @post.destroy
     # destroy is a buildin method for delete post. @post is assignning the id to a particular post to destroy
     redirect_to posts_path
