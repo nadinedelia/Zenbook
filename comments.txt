@@ -1,0 +1,19 @@
+https://guides.rubyonrails.org/getting_started.html#adding-a-route-for-comments 
+step 6 involves adding comments to articles
+
+- DB for comments
+- Ref to the user and post
+- Belong to post class
+- post has many comments
+- user has many posts
+- user has many comments
+
+- need to look at setting up more routes for comments and also generate controller + views
+
+resources :post do
+  resources :comments
+end
+this will produce urls like /post/:id/comments/:id
+
+Do we want a new form for posting comments? or re use the post form?
+Look into how to generate messages for when a comment/post is successfully updated / deleted
