@@ -14,6 +14,7 @@ RSpec.feature "Timeline", type: :feature do
   end
 
   scenario "Can't create post with empty message" do
+    signup
     visit "/posts/new"
     fill_in "Message", with: ""
     click_button "Share"
