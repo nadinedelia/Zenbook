@@ -22,8 +22,8 @@
           <%= post.created_at.strftime("%d %b %y") %> 
           </p>
           <%# each message element from the database message column %>
-          <p> <%= post.message %> </p> 
-
+          <p> <%= simple_format(post.message) %> </p> 
+          <%# simple_format replaces the /n with <br> so we can keep the line breaks on render%>
           <%# grey small text showing date %>
           <p class="text-muted text-sm">
           <%# having a link to delete the post %>
