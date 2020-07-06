@@ -7,7 +7,12 @@ class PostsController < ApplicationController
   
   def create
     @post = Post.create(post_params)
-    redirect_to posts_url
+
+    if @post.errors.any?
+      render 'new'
+    else
+      redirect_to posts_url
+    end
   end
   # p = Post.create(message: 'hello Minsi')
   #  (0.4ms)  BEGIN
@@ -17,7 +22,9 @@ class PostsController < ApplicationController
   # after making the create note, it redirect_to posts_url
 
   def index
-    @posts = Post.all
+    @posts = Post.all.order(created_at: :desc)
+        # default setting order for created_at column, newest item first
+
   end
   # SELECT  "posts".* FROM "posts" LIMIT $1 
   # render index.erb page to display all the posts
