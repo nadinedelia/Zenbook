@@ -15,10 +15,8 @@ class PostsController < ApplicationController
     @post = current_user.posts.build(post_params)
 
     if @post.save
-      flash[:success] = "Your post has been created!"
       redirect_to posts_path
     else
-      flash[:alert] = "Your new post couldn't be created!  Please check the form."
       render :new
     end
   end
@@ -39,10 +37,9 @@ class PostsController < ApplicationController
   end
   # SELECT  "posts".* FROM "posts" LIMIT $1 
   # render index.erb page to display all the posts
-  
 
   def destroy
-    @post = Post.find(params[:id])
+    @post = current_user.posts.find(params[:id])
     @post.destroy
     # destroy is a buildin method for delete post. @post is assignning the id to a particular post to destroy
     redirect_to posts_path
