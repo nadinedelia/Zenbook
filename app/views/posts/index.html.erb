@@ -8,10 +8,14 @@
 <% end %>
 <br>
 <br>
-<br>
-<br>
 
 <div class="line">
+<% if flash[:msg].present? %>
+<div class='confirm'>
+  <%= flash[:msg] %>
+</div>
+<% end %>
+<br>
   <%# interate the whole data base and render it on the webpage %>
       <% @posts.each do |post| %>
       <%# needed for center position %>

@@ -11,6 +11,7 @@ class PostsController < ApplicationController
     if @post.errors.any?
       render 'new'
     else
+      flash[:msg] = 'Your post was successful'
       redirect_to posts_url
     end
   end
