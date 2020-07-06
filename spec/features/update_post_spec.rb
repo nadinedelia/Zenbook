@@ -1,7 +1,9 @@
 require 'rails_helper'
+require 'web_helpers'
 
 feature 'Delete post' do
   scenario 'user can delete a post' do
+    signup
     visit "/posts"
     click_link "New post"
     fill_in "Message", with: "Delete me!"
@@ -14,6 +16,7 @@ end
 
 feature 'Update post' do
   scenario 'user can Update a post' do
+    signup
     visit "/posts"
     click_link "New post"
     fill_in "Message", with: "Update me!"
@@ -34,6 +37,7 @@ feature 'Update post after 10 mins' do
   end
 
   scenario 'User cant update a post after 10 mins' do
+    signup
     visit "/posts"
     click_link "New post"
     fill_in "Message", with: "Update me!"
