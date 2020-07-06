@@ -11,7 +11,7 @@ class PostsController < ApplicationController
     if @post.errors.any?
       render 'new'
     else
-      flash[:msg] = 'Your post was successful'
+      flash[:msg] = 'Your post was successful!'
       redirect_to posts_url
     end
   end
@@ -35,6 +35,7 @@ class PostsController < ApplicationController
     @post = Post.find(params[:id])
     @post.destroy
     # destroy is a buildin method for delete post. @post is assignning the id to a particular post to destroy
+    flash[:msg] = 'Your post was deleted!'
     redirect_to posts_path
   end
  
@@ -56,7 +57,7 @@ class PostsController < ApplicationController
   def update
     @post = Post.find(params[:id])
     @post.update(post_params)
-    
+    flash[:msg] = 'Your post was updated!'
     redirect_to posts_path
 
   end
