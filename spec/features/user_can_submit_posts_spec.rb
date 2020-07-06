@@ -10,5 +10,15 @@ RSpec.feature "Timeline", type: :feature do
     click_button "Share"
     expect(page).to have_content(Time.now.strftime("%d %b %y"))
     expect(page).to have_content("Hello, world!")
+    expect(page).to have_content('Your post was successful!')
   end
+
+  scenario "Can't create post with empty message" do
+    signup
+    visit "/posts/new"
+    fill_in "Message", with: ""
+    click_button "Share"
+    expect(page).to have_content("error")
+  end
+
 end

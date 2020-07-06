@@ -8,10 +8,14 @@
 <% end %>
 <br>
 <br>
-<br>
-<br>
 
 <div class="line">
+<% if flash[:msg].present? %>
+<div class='confirm'>
+  <%= flash[:msg] %>
+</div>
+<% end %>
+<br>
   <%# interate the whole data base and render it on the webpage %>
       <% @posts.each do |post| %>
       <%# needed for center position %>
@@ -23,9 +27,12 @@
           <%= post.created_at.strftime("%d %b %y") %> 
           </p>
           <%# each message element from the database message column %>
-          <p> <%= post.message %> </p>
-         
+
+          <p> <%= simple_format(post.message) %> </p> 
+          <%# simple_format replaces the /n with <br> so we can keep the line breaks on render%>
+            
           <% if post.user.id == current_user.id %>
+
           <%# grey small text showing date %>
           <p class="text-muted text-sm">
           <%# having a link to delete the post %>

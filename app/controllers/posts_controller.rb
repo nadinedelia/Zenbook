@@ -15,6 +15,7 @@ class PostsController < ApplicationController
     @post = current_user.posts.build(post_params)
 
     if @post.save
+      flash[:msg] = 'Your post was successful!'
       redirect_to posts_path
     else
       render :new
@@ -33,7 +34,9 @@ class PostsController < ApplicationController
   # after making the create note, it redirect_to posts_url
 
   def index
-    @posts = Post.all
+    @posts = Post.all.order(created_at: :desc)
+        # default setting order for created_at column, newest item first
+
   end
   # SELECT  "posts".* FROM "posts" LIMIT $1 
   # render index.erb page to display all the posts
@@ -42,6 +45,7 @@ class PostsController < ApplicationController
     @post = current_user.posts.find(params[:id])
     @post.destroy
     # destroy is a buildin method for delete post. @post is assignning the id to a particular post to destroy
+    flash[:msg] = 'Your post was deleted!'
     redirect_to posts_path
   end
  
@@ -63,7 +67,7 @@ class PostsController < ApplicationController
   def update
     @post = Post.find(params[:id])
     @post.update(post_params)
-    
+    flash[:msg] = 'Your post was updated!'
     redirect_to posts_path
 
   end

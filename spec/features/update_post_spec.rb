@@ -10,6 +10,7 @@ feature 'Delete post' do
     click_button "Share"
     click_link 'Delete'
     expect(page).to_not have_content("Delete me!")
+    expect(page).to have_content("Your post was deleted!")
   end
 end
 
@@ -25,6 +26,7 @@ feature 'Update post' do
     click_button "Share"
     expect(page).to have_content("I'm changed I promise!!!")
     expect(page).to_not have_content('Update me!')
+    expect(page).to have_content("Your post was updated!")
   end
 end
 
