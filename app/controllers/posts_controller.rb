@@ -2,15 +2,31 @@ class PostsController < ApplicationController
   # this will ensure only users who are in session can access post contrller routes
   before_action :authenticate_user!
 
+
   def new
-    @post = Post.new
+    @post = current_user.posts.build
   end
+  # def new
+  #   @post = Post.new
+  # end
   # GET REQUEST. render the form new.html.erb
   
   def create
-    @post = Post.create(post_params)
-    redirect_to posts_url
+    @post = current_user.posts.build(post_params)
+
+    if @post.save
+      flash[:success] = "Your post has been created!"
+      redirect_to posts_path
+    else
+      flash[:alert] = "Your new post couldn't be created!  Please check the form."
+      render :new
+    end
   end
+  # def create
+  #   @post = Post.create(post_params)
+  #   redirect_to posts_url
+  # end
+
   # p = Post.create(message: 'hello Minsi')
   #  (0.4ms)  BEGIN
   # SQL (3.9ms)  INSERT INTO "posts" ("message", "created_at", "updated_at") 
