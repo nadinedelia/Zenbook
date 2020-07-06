@@ -1,5 +1,7 @@
 class PostsController < ApplicationController
-  
+  # this will ensure only users who are in session can access post contrller routes
+  before_action :authenticate_user!
+
   def new
     @post = Post.new
   end
