@@ -11,6 +11,7 @@ Rails.application.routes.draw do
   # making the entire CRUD structure routes for post
 
   root 'posts#index'
+  
   # root 'devise/registrations#new'
   # root 'registrations#new'
 end
