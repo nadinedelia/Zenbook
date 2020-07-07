@@ -11,13 +11,24 @@
   padding-bottom: 20px;
 }
 
+h3 {
+  font-size: 2rem;
+}
 // small title
 h4 {
   font-size: 2rem !important;
   font-family: "Amatic SC", cursive;
 }
 
-body {
-  background-image: url("https://images.unsplash.com/photo-1518241353330-0f7941c2d9b5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3025&q=80");
+.pic {
+  background-image: url("cover.jpeg");
   background-size: cover !important;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.form-control {
+  text-align: center;
+  size: 1rem;
+  background-color: white;
 }
