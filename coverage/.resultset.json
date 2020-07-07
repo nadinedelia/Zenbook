@@ -1,48 +1,16 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/chriscooney/projects/makers/acebook-TeamNameComingSoon-rails/spec/controllers/posts_controller_spec.rb": {
+      "/Users/ola/Projects/main-course/week-8/acebook-TeamNameComingSoon-rails/spec/controllers/comments_controller_spec.rb": {
         "lines": [
           1,
           null,
           1,
           null,
-          1,
-          1,
-          1,
-          1,
-          null,
-          null,
-          null,
-          1,
-          1,
-          0,
-          0,
-          null,
-          null,
-          null,
-          1,
-          1,
-          0,
-          0,
-          null,
-          null,
-          1,
-          0,
-          0,
-          null,
-          null,
-          null,
-          1,
-          1,
-          0,
-          0,
-          null,
-          null,
           null
         ]
       },
-      "/Users/chriscooney/projects/makers/acebook-TeamNameComingSoon-rails/spec/rails_helper.rb": {
+      "/Users/ola/Projects/main-course/week-8/acebook-TeamNameComingSoon-rails/spec/rails_helper.rb": {
         "lines": [
           null,
           1,
@@ -105,7 +73,7 @@
           null
         ]
       },
-      "/Users/chriscooney/projects/makers/acebook-TeamNameComingSoon-rails/config/environment.rb": {
+      "/Users/ola/Projects/main-course/week-8/acebook-TeamNameComingSoon-rails/config/environment.rb": {
         "lines": [
           null,
           1,
@@ -114,7 +82,7 @@
           1
         ]
       },
-      "/Users/chriscooney/projects/makers/acebook-TeamNameComingSoon-rails/config/application.rb": {
+      "/Users/ola/Projects/main-course/week-8/acebook-TeamNameComingSoon-rails/config/application.rb": {
         "lines": [
           1,
           null,
@@ -136,14 +104,14 @@
           null
         ]
       },
-      "/Users/chriscooney/projects/makers/acebook-TeamNameComingSoon-rails/config/boot.rb": {
+      "/Users/ola/Projects/main-course/week-8/acebook-TeamNameComingSoon-rails/config/boot.rb": {
         "lines": [
           1,
           null,
           1
         ]
       },
-      "/Users/chriscooney/projects/makers/acebook-TeamNameComingSoon-rails/config/environments/test.rb": {
+      "/Users/ola/Projects/main-course/week-8/acebook-TeamNameComingSoon-rails/config/environments/test.rb": {
         "lines": [
           1,
           null,
@@ -189,7 +157,7 @@
           null
         ]
       },
-      "/Users/chriscooney/projects/makers/acebook-TeamNameComingSoon-rails/config/initializers/application_controller_renderer.rb": {
+      "/Users/ola/Projects/main-course/week-8/acebook-TeamNameComingSoon-rails/config/initializers/application_controller_renderer.rb": {
         "lines": [
           null,
           null,
@@ -199,7 +167,7 @@
           null
         ]
       },
-      "/Users/chriscooney/projects/makers/acebook-TeamNameComingSoon-rails/config/initializers/assets.rb": {
+      "/Users/ola/Projects/main-course/week-8/acebook-TeamNameComingSoon-rails/config/initializers/assets.rb": {
         "lines": [
           null,
           null,
@@ -217,7 +185,7 @@
           null
         ]
       },
-      "/Users/chriscooney/projects/makers/acebook-TeamNameComingSoon-rails/config/initializers/backtrace_silencers.rb": {
+      "/Users/ola/Projects/main-course/week-8/acebook-TeamNameComingSoon-rails/config/initializers/backtrace_silencers.rb": {
         "lines": [
           null,
           null,
@@ -228,7 +196,7 @@
           null
         ]
       },
-      "/Users/chriscooney/projects/makers/acebook-TeamNameComingSoon-rails/config/initializers/cookies_serializer.rb": {
+      "/Users/ola/Projects/main-course/week-8/acebook-TeamNameComingSoon-rails/config/initializers/cookies_serializer.rb": {
         "lines": [
           null,
           null,
@@ -237,7 +205,7 @@
           1
         ]
       },
-      "/Users/chriscooney/projects/makers/acebook-TeamNameComingSoon-rails/config/initializers/devise.rb": {
+      "/Users/ola/Projects/main-course/week-8/acebook-TeamNameComingSoon-rails/config/initializers/devise.rb": {
         "lines": [
           null,
           null,
@@ -552,7 +520,7 @@
           null
         ]
       },
-      "/Users/chriscooney/projects/makers/acebook-TeamNameComingSoon-rails/config/initializers/filter_parameter_logging.rb": {
+      "/Users/ola/Projects/main-course/week-8/acebook-TeamNameComingSoon-rails/config/initializers/filter_parameter_logging.rb": {
         "lines": [
           null,
           null,
@@ -560,7 +528,7 @@
           1
         ]
       },
-      "/Users/chriscooney/projects/makers/acebook-TeamNameComingSoon-rails/config/initializers/inflections.rb": {
+      "/Users/ola/Projects/main-course/week-8/acebook-TeamNameComingSoon-rails/config/initializers/inflections.rb": {
         "lines": [
           null,
           null,
@@ -580,7 +548,7 @@
           null
         ]
       },
-      "/Users/chriscooney/projects/makers/acebook-TeamNameComingSoon-rails/config/initializers/mime_types.rb": {
+      "/Users/ola/Projects/main-course/week-8/acebook-TeamNameComingSoon-rails/config/initializers/mime_types.rb": {
         "lines": [
           null,
           null,
@@ -588,7 +556,7 @@
           null
         ]
       },
-      "/Users/chriscooney/projects/makers/acebook-TeamNameComingSoon-rails/config/initializers/wrap_parameters.rb": {
+      "/Users/ola/Projects/main-course/week-8/acebook-TeamNameComingSoon-rails/config/initializers/wrap_parameters.rb": {
         "lines": [
           null,
           null,
@@ -606,7 +574,7 @@
           null
         ]
       },
-      "/Users/chriscooney/projects/makers/acebook-TeamNameComingSoon-rails/config/routes.rb": {
+      "/Users/ola/Projects/main-course/week-8/acebook-TeamNameComingSoon-rails/config/routes.rb": {
         "lines": [
           1,
           null,
@@ -618,6 +586,8 @@
           null,
           null,
           1,
+          1,
+          null,
           null,
           null,
           1,
@@ -627,42 +597,122 @@
           null
         ]
       },
-      "/Users/chriscooney/projects/makers/acebook-TeamNameComingSoon-rails/app/models/user.rb": {
+      "/Users/ola/Projects/main-course/week-8/acebook-TeamNameComingSoon-rails/app/models/user.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/ola/Projects/main-course/week-8/acebook-TeamNameComingSoon-rails/app/models/application_record.rb": {
+        "lines": [
+          1,
+          1,
+          null
+        ]
+      },
+      "/Users/ola/Projects/main-course/week-8/acebook-TeamNameComingSoon-rails/app/helpers/application_helper.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
+      "/Users/ola/Projects/main-course/week-8/acebook-TeamNameComingSoon-rails/app/helpers/comments_helper.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
+      "/Users/ola/Projects/main-course/week-8/acebook-TeamNameComingSoon-rails/app/controllers/comments_controller.rb": {
+        "lines": [
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          null,
+          1,
+          1,
+          0,
+          null,
+          null
+        ]
+      },
+      "/Users/ola/Projects/main-course/week-8/acebook-TeamNameComingSoon-rails/app/controllers/application_controller.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          1,
+          null,
+          1,
+          1,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/ola/Projects/main-course/week-8/acebook-TeamNameComingSoon-rails/spec/controllers/posts_controller_spec.rb": {
         "lines": [
           1,
           null,
           1,
           null,
-          null,
-          null,
+          1,
+          1,
+          1,
           1,
           null,
           null,
           null,
+          1,
+          1,
+          0,
+          0,
           null,
           null,
           null,
+          1,
+          1,
+          0,
+          0,
           null,
           null,
+          1,
+          0,
+          0,
+          null,
+          null,
+          null,
+          1,
+          1,
+          0,
+          0,
           null,
           null,
           null
         ]
       },
-      "/Users/chriscooney/projects/makers/acebook-TeamNameComingSoon-rails/app/models/application_record.rb": {
-        "lines": [
-          1,
-          1,
-          null
-        ]
-      },
-      "/Users/chriscooney/projects/makers/acebook-TeamNameComingSoon-rails/app/helpers/application_helper.rb": {
-        "lines": [
-          1,
-          null
-        ]
-      },
-      "/Users/chriscooney/projects/makers/acebook-TeamNameComingSoon-rails/app/controllers/posts_controller.rb": {
+      "/Users/ola/Projects/main-course/week-8/acebook-TeamNameComingSoon-rails/app/controllers/posts_controller.rb": {
         "lines": [
           1,
           null,
@@ -750,21 +800,7 @@
           null
         ]
       },
-      "/Users/chriscooney/projects/makers/acebook-TeamNameComingSoon-rails/app/controllers/application_controller.rb": {
-        "lines": [
-          1,
-          1,
-          null,
-          1,
-          null,
-          1,
-          1,
-          null,
-          null,
-          null
-        ]
-      },
-      "/Users/chriscooney/projects/makers/acebook-TeamNameComingSoon-rails/spec/features/login_out_spec.rb": {
+      "/Users/ola/Projects/main-course/week-8/acebook-TeamNameComingSoon-rails/spec/features/login_out_spec.rb": {
         "lines": [
           1,
           null,
@@ -793,7 +829,7 @@
           null
         ]
       },
-      "/Users/chriscooney/projects/makers/acebook-TeamNameComingSoon-rails/spec/features/update_post_spec.rb": {
+      "/Users/ola/Projects/main-course/week-8/acebook-TeamNameComingSoon-rails/spec/features/update_post_spec.rb": {
         "lines": [
           1,
           1,
@@ -847,7 +883,7 @@
           null
         ]
       },
-      "/Users/chriscooney/projects/makers/acebook-TeamNameComingSoon-rails/spec/web_helpers.rb": {
+      "/Users/ola/Projects/main-course/week-8/acebook-TeamNameComingSoon-rails/spec/web_helpers.rb": {
         "lines": [
           1,
           5,
@@ -859,7 +895,7 @@
           null
         ]
       },
-      "/Users/chriscooney/projects/makers/acebook-TeamNameComingSoon-rails/spec/features/user_can_submit_posts_spec.rb": {
+      "/Users/ola/Projects/main-course/week-8/acebook-TeamNameComingSoon-rails/spec/features/user_can_submit_posts_spec.rb": {
         "lines": [
           1,
           1,
@@ -887,7 +923,43 @@
           null
         ]
       },
-      "/Users/chriscooney/projects/makers/acebook-TeamNameComingSoon-rails/spec/models/post_spec.rb": {
+      "/Users/ola/Projects/main-course/week-8/acebook-TeamNameComingSoon-rails/spec/helpers/comments_helper_spec.rb": {
+        "lines": [
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          1,
+          null
+        ]
+      },
+      "/Users/ola/Projects/main-course/week-8/acebook-TeamNameComingSoon-rails/spec/models/comment_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          null
+        ]
+      },
+      "/Users/ola/Projects/main-course/week-8/acebook-TeamNameComingSoon-rails/app/models/comment.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null
+        ]
+      },
+      "/Users/ola/Projects/main-course/week-8/acebook-TeamNameComingSoon-rails/spec/models/post_spec.rb": {
         "lines": [
           1,
           null,
@@ -896,7 +968,7 @@
           null
         ]
       },
-      "/Users/chriscooney/projects/makers/acebook-TeamNameComingSoon-rails/app/models/post.rb": {
+      "/Users/ola/Projects/main-course/week-8/acebook-TeamNameComingSoon-rails/app/models/post.rb": {
         "lines": [
           1,
           null,
@@ -904,12 +976,12 @@
           null,
           1,
           1,
-          1,
           null,
+          1,
           null
         ]
       },
-      "/Users/chriscooney/projects/makers/acebook-TeamNameComingSoon-rails/spec/models/user_spec.rb": {
+      "/Users/ola/Projects/main-course/week-8/acebook-TeamNameComingSoon-rails/spec/models/user_spec.rb": {
         "lines": [
           1,
           null,
@@ -918,7 +990,7 @@
           null
         ]
       },
-      "/Users/chriscooney/projects/makers/acebook-TeamNameComingSoon-rails/app/controllers/registrations_controller.rb": {
+      "/Users/ola/Projects/main-course/week-8/acebook-TeamNameComingSoon-rails/app/controllers/registrations_controller.rb": {
         "lines": [
           1,
           null,
@@ -950,6 +1022,6 @@
         ]
       }
     },
-    "timestamp": 1594052810
+    "timestamp": 1594130172
   }
 }
