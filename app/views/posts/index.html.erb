@@ -46,24 +46,14 @@
           </p>
           <% end %>
 
-           <h7>add comment</h7>
            <% post.comments.each do |comment| %>
            <p class="text-muted text-sm">
+           <strong><%= comment.user.name %></strong>:
            <%= comment.content %>
            </p>
            <% end %>
-
-          <%# <%= form_with(model: [post, post.comments.build], 
-            local: true) do |form| %> 
-            <%# <p class="text-muted text-sm">
-            <%= form.label :comment %>
-            <%# <%= form.text_area :content %><br>
-            <%# <%= form.submit %> 
-            <%# </p>
-          <% end %> 
       
-          <%= form_with(model: [post, post.comments.build], 
-            local: true) do |form| %> 
+          <%= form_with(model: [post], local: true) do |form| %> 
             <p class="text-muted text-sm">
             <%= form.label :comment %>
             <%= form.text_area :content %><br>
