@@ -7,7 +7,9 @@ Rails.application.routes.draw do
     get 'signup', to: 'devise/registrations#new'
   end
 
-  resources :posts
+  resources :posts do
+    resources :comments
+  end
   # making the entire CRUD structure routes for post
 
   root 'posts#index'
