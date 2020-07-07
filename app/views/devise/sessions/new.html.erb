@@ -1,7 +1,16 @@
-<div class="container">
+
+<body class='pic'>
+<div class="container" id="sign-up-form">
   <div class="row">
-    <div class="col-sm-6 col-sm-offset-3">
+
+  <h1>WELCOME TO ZENBOOK</h1>
+  
+  <div class="col-sm-offset-12 col-sm-12">
+    <h4>Find your relaxation in code</h4>
+
+    <div class="col-sm-4 col-sm-offset-3">
       <h2 class="text-center">Log in</h2>
+      <br>
          <%= bootstrap_form_for(resource, 
                            as: resource_name, 
                            url: session_path(resource_name)) do |f| %>
@@ -22,6 +31,7 @@
       <% end -%>
 
         <%= f.submit "Log in", class: 'form-control login-button' %>
+        <br>
         <%= link_to "Sign Up", new_user_registration_path %>
 
 
@@ -30,3 +40,4 @@
     </div>
   </div> 
 </div>
+</body>
