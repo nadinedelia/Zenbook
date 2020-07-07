@@ -45,6 +45,14 @@
             <% end %>
           </p>
           <% end %>
+
+           <h7>Thoughs</h7>
+           <% post.comments.each do |comment| %>
+           <p class="text-muted text-sm">
+           <%= comment.content %>
+           </p>
+           <% end %>
+
             <%= form_with(model: [post, post.comments.build], 
             local: true) do |form| %> 
           <p class="text-muted text-sm">
