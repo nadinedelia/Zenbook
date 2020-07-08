@@ -46,17 +46,23 @@
           </p>
           <% end %>
 
-           <% post.comments.each do |comment| %>
-           <p class="text-muted text-sm">
-           <strong><%= comment.user.name %></strong>:
-           <%= comment.content %>
-           </p>
-           <p class="text-muted text-sm">
+          <% post.comments.each do |comment| %>
+          <p class="text-muted text-sm">
+          <strong><%= comment.user.name %></strong>:
+          <%= comment.content %>
+          </p>
+          <p class="text-muted text-sm">
             <%= link_to 'Delete', post_comment_path(post, comment),
                         method: :delete,
                         data: { confirm: 'Are you sure?' } %>
-           <% end %>
-           </p>
+
+            <% if comment.created_at >= Time.now - 10*60 %>
+              <%= link_to 'Edit', edit_post_comment_path(post, comment) %>
+            <% end %>
+          <% end %>
+
+       
+          </p>
           <%= form_with(model: [post, post.comments.build], local: true) do |form| %> 
             <p class="text-muted text-sm">
             <%= form.label :comment %><br>
