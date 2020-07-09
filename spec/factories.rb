@@ -1,3 +1,10 @@
-RSpec.configure do |config|
-  config.include FactoryBot::Syntax::Methods
+FactoryBot.define do
+  # sequence :email do |n|
+  #   "user#{n}@example.com"
+  # end
+  factory :user do
+    name {"John"}
+    password {"12345"}
+    email { "#{name}@example.com" }
+  end
 end
