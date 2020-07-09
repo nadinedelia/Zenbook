@@ -71,6 +71,15 @@
           1,
           null,
           null,
+          1,
+          1,
+          null,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null,
           null
         ]
       },
@@ -591,10 +600,10 @@
           null,
           null,
           1,
-          2,
-          2,
-          2,
-          2,
+          3,
+          3,
+          3,
+          3,
           null,
           null,
           null
@@ -735,10 +744,11 @@
       "/Users/nadinedelia/Projects/acebook-TeamNameComingSoon-rails/spec/controllers/posts_controller_spec.rb": {
         "lines": [
           1,
-          null,
           1,
           null,
           1,
+          null,
+          1,
           1,
           1,
           1,
@@ -746,6 +756,22 @@
           null,
           null,
           1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null,
+          null,
+          1,
+          1,
+          0,
+          0,
+          null,
+          null,
           1,
           0,
           0,
@@ -758,16 +784,30 @@
           0,
           null,
           null,
+          null
+        ]
+      },
+      "/Users/nadinedelia/Projects/acebook-TeamNameComingSoon-rails/spec/support/devise.rb": {
+        "lines": [
           1,
-          0,
-          0,
+          null,
+          1,
           null,
           null,
           null,
           1,
+          null
+        ]
+      },
+      "/Users/nadinedelia/Projects/acebook-TeamNameComingSoon-rails/spec/support/controller_macros.rb": {
+        "lines": [
           1,
-          0,
-          0,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
           null,
           null,
           null
@@ -811,7 +851,7 @@
           null,
           null,
           1,
-          23,
+          24,
           null,
           null,
           null,
@@ -1113,6 +1153,6 @@
         ]
       }
     },
-    "timestamp": 1594293893
+    "timestamp": 1594296278
   }
 }
