@@ -95,13 +95,22 @@ footer {
   padding-left: 10px;
   padding-top: 20px;
   margin: 0 auto;
-  background-color: red;
+  // background-color: red;
   width: 40%;
 }
 
 #comm-wrap2 {
   text-align: center;
   margin: 0 auto;
-  background-color: yellow;
+  // background-color: yellow;
   width: 40%;
+}
+
+#messag {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  text-align: center;
+  margin: 0 auto;
+  background-color: yellow;
+  border-bottom: 5px solid red;
 }

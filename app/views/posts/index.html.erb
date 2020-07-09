@@ -76,6 +76,9 @@
           </p>
 </div>
 <%# ------------------------------ MESSAGE -------------------------------- %>
+
+<div id="messag">
+
           <p> <%= simple_format(post.message) %> </p> 
           <%# simple_format replaces the /n with <br> so we can keep the line breaks on render%>
             
@@ -94,7 +97,7 @@
             <% end %>
           </p>
           <% end %>
-
+</div>
 
           <%# ------------------------------ COMMENTS START -------------------------------- %>
 <div class="row">
@@ -109,7 +112,7 @@
             <%= link_to 'Delete', post_comment_path(post, comment),
                         method: :delete,
                         data: { confirm: 'Are you sure?' } %>
-
+–
             <% if comment.created_at >= Time.now - 10*60 %>
               <%= link_to 'Edit', edit_post_comment_path(post, comment) %>
             <% end %>
