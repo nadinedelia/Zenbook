@@ -1,3 +1,6 @@
+Documentation:
+  Enabled: false
+
 AllCops:
   Exclude:
     - "spec/spec_helper.rb"
