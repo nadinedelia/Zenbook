@@ -1,8 +1,6 @@
 # frozen_string_literal: true
 
 class RegistrationsController < Devise::RegistrationsController
-  # RegistrationsController is inherited / imported from Devise::RegistrationsController class (available to view on GitHub)
-
   private
 
   def sign_up_params
