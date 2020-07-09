@@ -67,13 +67,14 @@
           <div class="line">
 
 <%# ------------------------------ USERNAME & POSTED AT -------------------------------- %>
+<div id="head-wrap">
 
           <p class="text-muted text-sm">
           Posted by <%= post.user.name %> on
 
           <%= post.created_at.strftime("%d %b %y") %> 
           </p>
-
+</div>
 <%# ------------------------------ MESSAGE -------------------------------- %>
           <p> <%= simple_format(post.message) %> </p> 
           <%# simple_format replaces the /n with <br> so we can keep the line breaks on render%>
