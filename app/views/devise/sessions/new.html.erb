@@ -28,31 +28,31 @@
     <div class="col-sm-4 col-sm-offset-3">
       <h2 class="text-center">Log in</h2>
       <br>
-         <%= bootstrap_form_for(resource, 
-                           as: resource_name, 
-                           url: session_path(resource_name)) do |f| %>
+        <%= bootstrap_form_for(resource, 
+                          as: resource_name, 
+                          url: session_path(resource_name)) do |f| %>
 
-         <%= f.email_field :email, 
-                           autofocus: true, 
-                           class: 'form-control', 
-                           placeholder: 'email' %>
+        <%= f.email_field :email, 
+                          autofocus: true, 
+                          class: 'form-control', 
+                          placeholder: 'email' %>
 
-         <%= f.password_field  :password, 
+        <%= f.password_field  :password, 
                               autocomplete: "off", 
                               class: 'form-control',
                               placeholder: 'password' %>
 
 
       <% if devise_mapping.rememberable? -%>
-         <%= f.check_box :remember_me %>
+        <%= f.check_box :remember_me %>
       <% end -%>
 
         <%= f.submit "Log in", class: 'form-control login-button' %>
         <br>
 
 
-      <% end %>
-    </div>
-  </div> 
-</div>
+        <% end %>
+      </div>
+    </div> 
+  </div>
 </body>

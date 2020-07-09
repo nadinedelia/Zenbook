@@ -1,7 +1,8 @@
-class CommentsController < ApplicationController
+# frozen_string_literal: true
 
-    before_action :find_post
-    before_action :find_comment, only: [:edit, :update, :destroy]
+class CommentsController < ApplicationController
+  before_action :find_post
+  before_action :find_comment, only: %i[edit update destroy]
 
   def create
     @comment = @post.comments.build(comment_params)
@@ -11,8 +12,7 @@ class CommentsController < ApplicationController
     redirect_to posts_path
   end
 
-  def edit
-  end
+  def edit; end
 
   def update
     @comment.update(comment_params)
@@ -22,11 +22,12 @@ class CommentsController < ApplicationController
 
   def destroy
     @comment.destroy
-    flash[:msg] = "Comment gone!!"
+    flash[:msg] = 'Comment gone!!'
     redirect_to posts_path
   end
 
   private
+
   def comment_params
     params.require(:comment).permit(:content)
   end
@@ -38,5 +39,4 @@ class CommentsController < ApplicationController
   def find_comment
     @comment = @post.comments.find(params[:id])
   end
-
 end
