@@ -85,7 +85,7 @@
           <%= form_with(model: [post, post.comments.build], local: true) do |form| %> 
             <p class="text-muted text-sm">
             <%= form.label :comment %><br>
-            <%= form.text_area :content %><br>
+            <%= form.text_area :content, class: "field" %><br>
             <%= form.submit "comment" %>
             </p>
           <% end %>
