@@ -1,5 +1,6 @@
+# frozen_string_literal: true
+
 class User < ApplicationRecord
-  
   has_many :posts, dependent: :destroy
   has_many :comments, dependent: :destroy
 
@@ -8,12 +9,12 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
 end
-# everything after the : are Devise modules 
+# everything after the : are Devise modules
 # each is responsible for a different action from encrypting passwords
 # to offering recoverable actions
-#https://subscription.packtpub.com/book/application_development/9781782167044/1/ch01lvl1sec08/devise-modules
-#full list here
-#modules are similar to classes in that they hold methods but instead if being attached to one class
-#they can be shared across all classes.
+# https://subscription.packtpub.com/book/application_development/9781782167044/1/ch01lvl1sec08/devise-modules
+# full list here
+# modules are similar to classes in that they hold methods but instead if being attached to one class
+# they can be shared across all classes.
 
-#http://ruby-for-beginners.rubymonstas.org/advanced/modules.html
+# http://ruby-for-beginners.rubymonstas.org/advanced/modules.html
