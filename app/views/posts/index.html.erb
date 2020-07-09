@@ -84,7 +84,7 @@
             
           <% if post.user.id == current_user.id %>
           <%# grey small text showing date %>
-          <p class="text-muted text-sm">
+          <p class="msglinks">
           <%# having a link to delete the post %>
             <%= link_to 'Delete', post_path(post), 
                         method: :delete, 
@@ -92,7 +92,7 @@
                         data: { confirm: 'Are you sure?' } %>
           <%# <% end %> 
   <%# condition statement for edit post with in 10 minutes window %>
-            <% if post.created_at >= Time.now - 10*60 %>
+            <% if post.created_at >= Time.now - 10*60 %> –
               <%= link_to 'Edit', edit_post_path(post) %>
             <% end %>
           </p>
