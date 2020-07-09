@@ -46,12 +46,10 @@
           <%= post.created_at.strftime("%d %b %y") %> 
           </p>
           <%# each message element from the database message column %>
-
           <p> <%= simple_format(post.message) %> </p> 
           <%# simple_format replaces the /n with <br> so we can keep the line breaks on render%>
             
           <% if post.user.id == current_user.id %>
-
           <%# grey small text showing date %>
           <p class="text-muted text-sm">
           <%# having a link to delete the post %>
@@ -66,15 +64,41 @@
             <% end %>
           </p>
           <% end %>
+
+          <% post.comments.each do |comment| %>
+          <p class="text-muted text-sm">
+          <strong><%= comment.user.name %></strong>:
+          <%= comment.content %>
+          </p>
+          <p class="text-muted text-sm">
+            <%= link_to 'Delete', post_comment_path(post, comment),
+                        method: :delete,
+                        data: { confirm: 'Are you sure?' } %>
+
+            <% if comment.created_at >= Time.now - 10*60 %>
+              <%= link_to 'Edit', edit_post_comment_path(post, comment) %>
+            <% end %>
+          <% end %>
+
+       
+          </p>
+          <%= form_with(model: [post, post.comments.build], local: true) do |form| %> 
+            <p class="text-muted text-sm">
+            <%= form.label :comment %><br>
+            <%= form.text_area :content %><br>
+            <%= form.submit "comment" %>
+            </p>
+          <% end %>
+
+
           </div>
         </div>
         <br>
+ 
         <% end %>
         <%= link_to "Log Out", destroy_user_session_path, method: :delete %>
       </div>
     </div>
   </div>
 </div>
-
-
 </div>

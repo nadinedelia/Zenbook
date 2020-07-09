@@ -4,6 +4,6 @@ class Post < ApplicationRecord
                         length: { minimum: 1 }
     belongs_to :user
     validates :user_id, presence: true
-    validates :message, presence: true
-
+    
+    has_many :comments, dependent: :destroy
 end
