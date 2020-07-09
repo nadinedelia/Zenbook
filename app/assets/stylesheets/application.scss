@@ -48,3 +48,13 @@ a.text-muted:focus {
   top: 0;
   width: 100%;
 }
+
+footer {
+  display: flex;
+  justify-content: center;
+  bottom: 0;
+  font-size: 0.70em;
+  padding-top: 15px;
+  border: thin;
+  background-color: white;
+}
