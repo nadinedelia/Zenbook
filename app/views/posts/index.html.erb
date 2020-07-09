@@ -58,7 +58,7 @@
                         # data here is just a pop up message 
                         data: { confirm: 'Are you sure?' } %>
           <%# <% end %> 
-   <%# condition statement for edit post with in 10 minutes window %>
+  <%# condition statement for edit post with in 10 minutes window %>
             <% if post.created_at >= Time.now - 10*60 %>
               <%= link_to 'Edit', edit_post_path(post) %>
             <% end %>
@@ -80,7 +80,6 @@
             <% end %>
           <% end %>
 
-       
           </p>
           <%= form_with(model: [post, post.comments.build], local: true) do |form| %> 
             <p class="text-muted text-sm">
@@ -94,7 +93,6 @@
           </div>
         </div>
         <br>
- 
         <% end %>
         <%= link_to "Log Out", destroy_user_session_path, method: :delete %>
       </div>
