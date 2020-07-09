@@ -97,7 +97,7 @@
 
 
           <%# ------------------------------ COMMENTS START -------------------------------- %>
-
+<div id="comm-wrap">
 
           <% post.comments.each do |comment| %>
           <p class="text-muted text-sm">
@@ -114,6 +114,9 @@
             <% end %>
           <% end %>
 
+</div>
+
+<div id="comm-wrap2">
           </p>
           <%= form_with(model: [post, post.comments.build], local: true) do |form| %> 
             <p class="text-muted text-sm">
@@ -123,6 +126,7 @@
             </p>
           <% end %>
 
+</div>
 <%# ------------------------------ COMMENTS FINISH -------------------------------- %>
 
 
