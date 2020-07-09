@@ -2,3 +2,8 @@ AllCops:
   Exclude:
     - "spec/spec_helper.rb"
     - "spec/rails_helper.rb"
+    - "spec/**/*"
+    - "db/**/*"
+    - "bin/*"
+    - "config/**/*"
+    - "config.ru"
