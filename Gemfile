@@ -43,6 +43,7 @@ group :development, :test do
   gem 'rubocop', require: false
   gem 'simplecov'
   gem 'simplecov-console'
+  gem 'factory_bot_rails'
 end
 
 group :development do
@@ -59,3 +60,5 @@ gem 'travis'
 ruby "2.5.0"
 
 gem 'devise'
+
+# gem 'factory_bot'
