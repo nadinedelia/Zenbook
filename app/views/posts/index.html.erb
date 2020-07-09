@@ -1,3 +1,6 @@
+<%# ------------------------------ NAVBAR START -------------------------------- %>
+
+
 <nav class="navbar navbar-expand-lg navbar-light bg-light mb-5">
   <div class="container">
     <%= link_to "Zenbook", root_path, class: "navbar-brand" %>
@@ -12,6 +15,11 @@
           <% else %>
             <%= link_to('Login', new_user_session_path, class: "nav-link") %>
           <% end %>
+
+<%# ------------------------------ NAVBAR FINISH -------------------------------- %>
+
+
+
         </li>
       </ul>
     </div>
@@ -22,6 +30,9 @@
 <body class="pic">
 <div class="container text-center">
 <%# button to the new_post form  %>
+
+<%# ------------------------------ NEW POST BUTTON START -------------------------------- %>
+
 <%= link_to new_post_path do %>
 <button class="btn btn-sm btn-primary pull-right">
   New post
@@ -30,24 +41,38 @@
 <br>
 <br>
 
-<div class="line">
+<%# ------------------------------ NEW POST BUTTON FINISH -------------------------------- %>
+
+
+<%# ------------------------------ FLASH MESSAGE START -------------------------------- %>
 <% if flash[:msg].present? %>
 <div class='confirm'>
   <%= flash[:msg] %>
 </div>
 <% end %>
+
+<%# ------------------------------ FLASH MESSAGE FINISH -------------------------------- %>
 <br>
+
+
+
+<%# ------------------------------ POST PANEL -------------------------------- %>
   <%# interate the whole data base and render it on the webpage %>
       <% @posts.each do |post| %>
       <%# needed for center position %>
         <div class="media-body">
+
           <div class="line">
+
+<%# ------------------------------ USERNAME & POSTED AT -------------------------------- %>
+
           <p class="text-muted text-sm">
           Posted by <%= post.user.name %> on
-          <%# time create for post on the database column "creaate_at", with format %>
+
           <%= post.created_at.strftime("%d %b %y") %> 
           </p>
-          <%# each message element from the database message column %>
+
+<%# ------------------------------ MESSAGE -------------------------------- %>
           <p> <%= simple_format(post.message) %> </p> 
           <%# simple_format replaces the /n with <br> so we can keep the line breaks on render%>
             
@@ -66,6 +91,10 @@
             <% end %>
           </p>
           <% end %>
+
+
+          <%# ------------------------------ COMMENTS START -------------------------------- %>
+
 
           <% post.comments.each do |comment| %>
           <p class="text-muted text-sm">
@@ -90,6 +119,8 @@
             <%= form.submit "comment" %>
             </p>
           <% end %>
+
+<%# ------------------------------ COMMENTS FINISH -------------------------------- %>
 
 
           </div>
