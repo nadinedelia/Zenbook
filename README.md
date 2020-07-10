@@ -1,4 +1,4 @@
-https://travis-ci.com/minsiyang/acebook-TeamNameComingSoon-rails.svg?branch=master
+[![Build Status](https://travis-ci.com/minsiyang/acebook-TeamNameComingSoon-rails.svg?branch=master)](https://travis-ci.com/minsiyang/acebook-TeamNameComingSoon-rails)=master
 
 # AceBook
 
