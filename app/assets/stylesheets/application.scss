@@ -27,7 +27,10 @@ body {
 
 // line underneath posts
 .line {
-  box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.075);
+  -webkit-box-shadow: 4px 6px 10px 0px rgba(26, 26, 26, 1);
+  -moz-box-shadow: 4px 6px 10px 0px rgba(26, 26, 26, 1);
+  box-shadow: 4px 6px 10px 0px rgba(26, 26, 26, 1);
+
   border-radius: 30px;
   border: 0;
   margin-bottom: 15px;
@@ -105,7 +108,7 @@ footer {
 #comm-wrap2 {
   text-align: center;
   margin: 0 auto;
-  // background-color: yellow;
+  // background-color: blue;
   width: 40%;
 }
 
@@ -123,3 +126,7 @@ footer {
 .msglinks {
   font-size: 1.5rem;
 }
+
+// #signin {
+//   background-color: white;
+// }
