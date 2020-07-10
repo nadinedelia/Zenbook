@@ -1,4 +1,6 @@
-<div class="panel">
+<div id="page-wrap">
+<div class="container text-center">
+
   <%= form_for @post do |form| %> <% if @post.errors.any? %>
   <div id="error_explanation">
     <h2>
@@ -16,4 +18,5 @@
 
   <%= form.submit "Share", :class => "btn btn-sm btn-primary pull-right" %> <%
   end %>
+</div>
 </div>

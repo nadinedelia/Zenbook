@@ -1,3 +1,5 @@
+<body class='pic'>
+
 <%= form_with(model: [@post, @comment], local: true) do |form| %>
 <p class="text-muted text-sm">
   <%= form.label :comment %><br />
@@ -5,3 +7,5 @@
   <%= form.submit %>
 </p>
 <% end %>
+
+</div>

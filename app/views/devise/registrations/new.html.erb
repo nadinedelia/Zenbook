@@ -23,15 +23,14 @@
 
   <div class="container" id="sign-up-form">
     <div class="row">
-    <h1>WELCOME TO ZENBOOK</h1>
+  
+    <h1 class="animate__animated animate__fadeIn animate__slow">WELCOME TO ZENBOOK</h1>
           
       <div class="col-sm-offset-12 col-sm-12">
-        <h4>Find your relaxation in code</h4>
+        <h4 class="animate__animated animate__fadeIn animate__slow animate__delay-1s">Find your relaxation in code</h4>
 
-        <div class="col-sm-offset-4 col-sm-4">
-          <h3>Sign up <small>it's free!</small></h3>
-
-
+        <div class="col-sm-offset-4 col-sm-4 sign-up-form-inputs">
+          <h3>Sign up</h3><br>
           <%# this is using the gemfile bootstrap_form. More info on usage can be found here https://github.com/bootstrap-ruby/bootstrap_form#bootstrap-form-for %>
           <%= bootstrap_form_for(resource, 
                               :as => resource_name, 
@@ -48,14 +47,15 @@
                               class: 'form-control' %>
           <%= f.password_field :password_confirmation, 
                               placeholder: 'password confirmation', 
-                              class: 'form-control' %>
+                              class: 'form-control' %><br>
           <%= f.submit 'Sign up', class: 'btn btn-sm btn-primary pull-right' %>
         <% end %>
+</div>
 
         <%# this renders everthing in the file containing conditionals on specific paths %>
         <%# <%= render "devise/shared/links" %>
 
       </div>
     </div>
-  </div>
+  </div><br>
 </body>

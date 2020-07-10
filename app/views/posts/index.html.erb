@@ -1,9 +1,28 @@
+<%# ------------------------------ NAVBAR START -------------------------------- %>
+
+
 <nav class="navbar navbar-expand-lg navbar-light bg-light mb-5">
   <div class="container">
     <%= link_to "Zenbook", root_path, class: "navbar-brand" %>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
+
+
+<%# ------------------------------ NEW POST BUTTON START -------------------------------- %>
+
+
+<div class="container justify-content-center">
+ <%= link_to new_post_path do %>
+<button class="btn btn-sm btn-primary pull-right">
+  New post
+  </button>
+<% end %>
+</div>
+
+<%# ------------------------------ NEW POST BUTTON FINISH -------------------------------- %>
+
+
     <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item">
@@ -12,46 +31,69 @@
           <% else %>
             <%= link_to('Login', new_user_session_path, class: "nav-link") %>
           <% end %>
+
+<%# ------------------------------ NAVBAR FINISH -------------------------------- %>
+
+
+
         </li>
       </ul>
     </div>
   </div>
 </nav>
+<br>
+<br>
+<br>
 
+<body class="pic2">
+<div id="page-wrap">
 <div class="container text-center">
-<%# button to the new_post form  %>
-<%= link_to new_post_path do %>
-<button class="btn btn-sm btn-primary pull-right">
-  New post
-  </button>
-<% end %>
-<br>
-<br>
 
-<div class="line">
+
+
+<%# ------------------------------ FLASH MESSAGE START -------------------------------- %>
+
+<div id='flashmsg'>
 <% if flash[:msg].present? %>
 <div class='confirm'>
   <%= flash[:msg] %>
 </div>
 <% end %>
+</div>
+<%# ------------------------------ FLASH MESSAGE FINISH -------------------------------- %>
 <br>
+
+
+
+<%# ------------------------------ POST PANEL -------------------------------- %>
+
   <%# interate the whole data base and render it on the webpage %>
       <% @posts.each do |post| %>
       <%# needed for center position %>
         <div class="media-body">
-          <div class="line">
+
+          <div class="line animate__animated animate__backInUp">
+
+
+<%# ------------------------------ USERNAME & POSTED AT -------------------------------- %>
+<div id="head-wrap">
+
           <p class="text-muted text-sm">
           Posted by <%= post.user.name %> on
-          <%# time create for post on the database column "creaate_at", with format %>
+
           <%= post.created_at.strftime("%d %b %y") %> 
           </p>
-          <%# each message element from the database message column %>
+</div>
+<%# ------------------------------ MESSAGE -------------------------------- %>
+
+<div id="messag">
+
           <p> <%= simple_format(post.message) %> </p> 
           <%# simple_format replaces the /n with <br> so we can keep the line breaks on render%>
             
           <% if post.user.id == current_user.id %>
           <%# grey small text showing date %>
-          <p class="text-muted text-sm">
+          <p class="msglinks">
           <%# having a link to delete the post %>
             <%= link_to 'Delete', post_path(post), 
                         method: :delete, 
@@ -59,14 +101,21 @@
                         data: { confirm: 'Are you sure?' } %>
           <%# <% end %> 
   <%# condition statement for edit post with in 10 minutes window %>
-            <% if post.created_at >= Time.now - 10*60 %>
+            <% if post.created_at >= Time.now - 10*60 %> –
               <%= link_to 'Edit', edit_post_path(post) %>
             <% end %>
           </p>
           <% end %>
+</div>
+
+          <%# ------------------------------ COMMENTS START -------------------------------- %>
+          
+<div class="row">
+<div id="comm-wrap">
 
           <% post.comments.each do |comment| %>
           <p class="text-muted text-sm">
+          
           <strong><%= comment.user.name %></strong>:
           <%= comment.content %>
           </p>
@@ -76,10 +125,14 @@
                         data: { confirm: 'Are you sure?' } %>
 
             <% if comment.created_at >= Time.now - 10*60 %>
+            –
               <%= link_to 'Edit', edit_post_comment_path(post, comment) %>
             <% end %>
           <% end %>
 
+</div>
+
+<div id="comm-wrap2">
           </p>
           <%= form_with(model: [post, post.comments.build], local: true) do |form| %> 
             <p class="text-muted text-sm">
@@ -89,14 +142,27 @@
             </p>
           <% end %>
 
+</div>
+</div>
+
+<%# ------------------------------ COMMENTS FINISH -------------------------------- %>
+
 
           </div>
         </div>
         <br>
         <% end %>
-        <%= link_to "Log Out", destroy_user_session_path, method: :delete %>
       </div>
     </div>
   </div>
 </div>
 </div>
+
+<%# ------------------------------ FOOTER -------------------------------- %>
+
+<br>
+<br>
+<br>
+<footer><p> Developed by ©️ <a href="https://github.com/minsiyang/acebook-TeamNameComingSoon-rails"> TeamNameComingSoon</a>💡</p></footer>
+</div>
+</body>

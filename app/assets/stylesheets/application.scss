@@ -17,18 +17,33 @@
 
 // Default styles
 @import "base/default";
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap");
 
 body {
   margin-top: 20px;
   background: #ebeef0;
+  text-align: center;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2;
 }
 
 // line underneath posts
 .line {
-  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.075);
-  border-radius: 0;
+  -webkit-box-shadow: 4px 6px 10px 0px rgba(26, 26, 26, 1);
+  -moz-box-shadow: 4px 6px 10px 0px rgba(26, 26, 26, 1);
+  box-shadow: 4px 6px 10px 0px rgba(26, 26, 26, 1);
+
+  border-radius: 5px 40px;
   border: 0;
   margin-bottom: 15px;
+  background-color: white;
+  position: relative;
+  z-index: 1;
 }
 
 // grey text for timestamp
@@ -42,3 +57,87 @@ a.text-muted:focus {
 .col-sm-offset-4 {
   margin-top: 30px;
 }
+
+footer {
+  display: flex;
+  justify-content: center;
+  bottom: 0;
+  font-size: 0.5em;
+  padding-top: 15px;
+  border: thin;
+  background-color: white;
+}
+
+.pic {
+  background-image: url("cover.jpeg");
+  background-size: cover !important;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.pic2 {
+  background-image: url("https://images.unsplash.com/photo-1562491914-b57555427899?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2775&q=80");
+  background-size: cover !important;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+#head-wrap {
+  text-align: center;
+  background-color: #d1d1d1;
+  margin: 0 auto;
+  padding-top: 1.5rem;
+  padding-bottom: 0.5rem;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 40px;
+}
+
+#page-wrap {
+  text-align: left;
+  width: 600px;
+  margin: 0 auto;
+}
+
+#comm-wrap {
+  text-align: left;
+  padding-left: 10px;
+  padding-top: 20px;
+  margin: 0 auto;
+  // background-color: red;
+  width: 40%;
+}
+
+#comm-wrap2 {
+  text-align: center;
+  margin: 0 auto;
+  // background-color: blue;
+  width: 40%;
+}
+
+#messag {
+  padding-top: 1.5rem;
+  padding-bottom: 2rem;
+  text-align: center;
+  margin: 0 auto;
+  // background-color: yellow;
+  border-bottom: 1px solid #acacac;
+  font-family: "Amatic SC", cursive;
+  font-size: 3rem;
+}
+
+.msglinks {
+  font-size: 0.8rem;
+  font-family: helvetica;
+}
+
+#flashmsg {
+  background-color: white;
+  border-radius: 5px 40px;
+  -webkit-box-shadow: 4px 6px 10px 0px rgba(26, 26, 26, 1);
+  -moz-box-shadow: 4px 6px 10px 0px rgba(26, 26, 26, 1);
+  box-shadow: 4px 6px 10px 0px rgba(26, 26, 26, 1);
+}
+
+// #signin {
+//   background-color: white;
+// }

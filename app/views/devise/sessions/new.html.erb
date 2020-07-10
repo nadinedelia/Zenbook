@@ -20,12 +20,12 @@
 <div class="container" id="sign-up-form">
   <div class="row">
 
-  <h1>WELCOME TO ZENBOOK</h1>
+  <h1 class="animate__animated animate__fadeIn animate__slow">WELCOME TO ZENBOOK</h1>
   
   <div class="col-sm-offset-12 col-sm-12">
-    <h4>Find your relaxation in code</h4>
+    <h4 class="animate__animated animate__fadeIn animate__slow animate__delay-1s">Find your relaxation in code</h4><br>
 
-    <div class="col-sm-4 col-sm-offset-3">
+    <div class="col-sm-4 col-sm-offset-3 sign-up-form-inputs">
       <h2 class="text-center">Log in</h2>
       <br>
         <%= bootstrap_form_for(resource, 
@@ -44,15 +44,15 @@
 
 
       <% if devise_mapping.rememberable? -%>
-        <%= f.check_box :remember_me %>
+        <%= f.check_box :remember_me %><br>
       <% end -%>
 
-        <%= f.submit "Log in", class: 'form-control login-button' %>
-        <br>
+        <%= f.submit "Log in", class: 'btn btn-sm btn-primary pull-right' %>
+        <br><br>
 
 
         <% end %>
       </div>
     </div> 
-  </div>
+  </div><br>
 </body>
