@@ -1,3 +1,5 @@
+https://travis-ci.com/minsiyang/acebook-TeamNameComingSoon-rails.svg?branch=master
+
 # AceBook
 
 REQUIRED INSTRUCTIONS:
