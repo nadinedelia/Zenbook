@@ -15,9 +15,9 @@ In this project we built a Ruby on Rails app with a similar behaviour to Faceboo
 ## Team
 
 - [Olatunji](https://github.com/ooduola?tab=repositories)
-- [Minsi]
-- [Chris]
-- [Nadine]
+- [Minsi](https://github.com/minsiyang)
+- [Chris](https://github.com/ChrisCooney05)
+- [Nadine](https://github.com/nadinedelia)
 
 ## Screenshots 
 
