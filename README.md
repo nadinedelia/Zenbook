@@ -1,5 +1,7 @@
 [![Build Status](https://travis-ci.com/minsiyang/acebook-TeamNameComingSoon-rails.svg?branch=master)](https://travis-ci.com/minsiyang/acebook-TeamNameComingSoon-rails)
 
+[![Coverage Status](https://coveralls.io/repos/github/minsiyang/acebook-TeamNameComingSoon-rails/badge.svg?branch=master)](https://coveralls.io/github/minsiyang/acebook-TeamNameComingSoon-rails?branch=master)
+
 # AceBook
 
 REQUIRED INSTRUCTIONS:
