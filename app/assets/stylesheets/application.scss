@@ -25,6 +25,13 @@ body {
   text-align: center;
 }
 
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+}
+
 // line underneath posts
 .line {
   -webkit-box-shadow: 4px 6px 10px 0px rgba(26, 26, 26, 1);
@@ -35,6 +42,8 @@ body {
   border: 0;
   margin-bottom: 15px;
   background-color: white;
+  position: relative;
+  z-index: 1;
 }
 
 // grey text for timestamp
@@ -47,12 +56,6 @@ a.text-muted:focus {
 
 .col-sm-offset-4 {
   margin-top: 30px;
-}
-
-.navbar {
-  position: fixed;
-  top: 0;
-  width: 100%;
 }
 
 footer {
