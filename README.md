@@ -2,17 +2,45 @@
 
 [![Coverage Status](https://coveralls.io/repos/github/minsiyang/acebook-TeamNameComingSoon-rails/badge.svg?branch=master)](https://coveralls.io/github/minsiyang/acebook-TeamNameComingSoon-rails?branch=master)
 
-# AceBook
+## About the project
 
-REQUIRED INSTRUCTIONS:
+In this project we built a Ruby on Rails app with a similar behaviour to Facebook. Users can..
 
-1. TeamNameComingSoon – the best team name in the galaxy
+[x] Sign up
+[x] Login / Logout 
+[x] Create posts and comments.
+[x] Edit post and comments.
+[x] Delete post and comments.
+
+## Team
+
+- [Olatunji](https://github.com/ooduola?tab=repositories)
+- [Minsi]
+- [Chris]
+- [Nadine]
+
+## Screenshots 
+
+[here]
+
+
+## Link to project 
+
+here.
+
+## Built With
+- HTML, CSS, Javascript
+- Ruby
+- Ruby on Rails
+- Rubocop
+- Rspec with Capybara and Factory Bot for testing
+- Devise for authentication
+
+## Project Overview 
+
+[Trello board](https://trello.com/b/xrhvWkLN/acebook-tncs)
 
 [You can find the engineering project outline here.](https://github.com/makersacademy/course/tree/master/engineering_projects/rails)
-
-
-2. The card wall is here: https://trello.com/b/xrhvWkLN/acebook-tncs
-
 
 
 ## How to contribute to this project
