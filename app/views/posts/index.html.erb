@@ -53,12 +53,13 @@
 
 <%# ------------------------------ FLASH MESSAGE START -------------------------------- %>
 
+<div id='flashmsg'>
 <% if flash[:msg].present? %>
 <div class='confirm'>
   <%= flash[:msg] %>
 </div>
 <% end %>
-
+</div>
 <%# ------------------------------ FLASH MESSAGE FINISH -------------------------------- %>
 <br>
 
@@ -71,7 +72,7 @@
       <%# needed for center position %>
         <div class="media-body">
 
-          <div class="line">
+          <div class="line animate__animated animate__backInUp">
 
 
 <%# ------------------------------ USERNAME & POSTED AT -------------------------------- %>
@@ -114,6 +115,7 @@
 
           <% post.comments.each do |comment| %>
           <p class="text-muted text-sm">
+          
           <strong><%= comment.user.name %></strong>:
           <%= comment.content %>
           </p>

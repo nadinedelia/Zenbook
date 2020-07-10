@@ -12,7 +12,7 @@ end
   feature 'logout' do
     scenario "user can log out of Zenbook" do
       signup
-      click_link 'Log Out'
+      click_link 'Logout'
       expect(page).to have_current_path('/login')
     end
   end
