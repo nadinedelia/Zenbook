@@ -132,6 +132,10 @@ footer {
 
 #flashmsg {
   background-color: white;
+  border-radius: 5px 40px;
+  -webkit-box-shadow: 4px 6px 10px 0px rgba(26, 26, 26, 1);
+  -moz-box-shadow: 4px 6px 10px 0px rgba(26, 26, 26, 1);
+  box-shadow: 4px 6px 10px 0px rgba(26, 26, 26, 1);
 }
 
 // #signin {
