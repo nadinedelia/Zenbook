@@ -64,3 +64,5 @@ gem 'devise'
 
 gem 'factory_bot_rails'
 
+gem 'coveralls', require: false
+
