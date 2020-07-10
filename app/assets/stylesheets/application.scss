@@ -28,7 +28,7 @@ body {
 // line underneath posts
 .line {
   box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.075);
-  border-radius: 0;
+  border-radius: 30px;
   border: 0;
   margin-bottom: 15px;
   background-color: white;
@@ -83,6 +83,8 @@ footer {
   margin: 0 auto;
   padding-top: 1.5rem;
   padding-bottom: 0.5rem;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
 }
 
 #page-wrap {
