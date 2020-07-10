@@ -31,7 +31,7 @@ body {
   -moz-box-shadow: 4px 6px 10px 0px rgba(26, 26, 26, 1);
   box-shadow: 4px 6px 10px 0px rgba(26, 26, 26, 1);
 
-  border-radius: 30px;
+  border-radius: 5px 40px;
   border: 0;
   margin-bottom: 15px;
   background-color: white;
@@ -85,8 +85,8 @@ footer {
   margin: 0 auto;
   padding-top: 1.5rem;
   padding-bottom: 0.5rem;
-  border-top-left-radius: 30px;
-  border-top-right-radius: 30px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 40px;
 }
 
 #page-wrap {
