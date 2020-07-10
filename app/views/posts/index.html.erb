@@ -53,12 +53,13 @@
 
 <%# ------------------------------ FLASH MESSAGE START -------------------------------- %>
 
+<div id='flashmsg'>
 <% if flash[:msg].present? %>
 <div class='confirm'>
   <%= flash[:msg] %>
 </div>
 <% end %>
-
+</div>
 <%# ------------------------------ FLASH MESSAGE FINISH -------------------------------- %>
 <br>
 
