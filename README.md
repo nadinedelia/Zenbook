@@ -6,11 +6,12 @@
 
 [![Build Status](https://travis-ci.com/minsiyang/acebook-TeamNameComingSoon-rails.svg?branch=master)](https://travis-ci.com/minsiyang/acebook-TeamNameComingSoon-rails)
 
-[![Coverage Status](https://coveralls.io/repos/github/minsiyang/acebook-TeamNameComingSoon-rails/badge.svg?branch=master)](https://coveralls.io/github/minsiyang/acebook-TeamNameComingSoon-rails?branch=master) – reached a coverage of 97.32%
+[![Coverage Status](https://coveralls.io/repos/github/minsiyang/acebook-TeamNameComingSoon-rails/badge.svg?branch=master)](https://coveralls.io/github/minsiyang/acebook-TeamNameComingSoon-rails?branch=master)
+– reached a coverage of 97.32%
 
 ## Link to project
 
-https://zenbook4u.herokuapp.com/
+[Deployed App on Heroku](https://zenbook4u.herokuapp.com/)
 
 ## About the project
 
