@@ -1,6 +1,8 @@
+# Zenbook – a peaceful Facebook Clone from stressed Devs
+
 [![Build Status](https://travis-ci.com/minsiyang/acebook-TeamNameComingSoon-rails.svg?branch=master)](https://travis-ci.com/minsiyang/acebook-TeamNameComingSoon-rails)
 
-[![Coverage Status](https://coveralls.io/repos/github/minsiyang/acebook-TeamNameComingSoon-rails/badge.svg?branch=master)](https://coveralls.io/github/minsiyang/acebook-TeamNameComingSoon-rails?branch=master)
+[![Coverage Status](https://coveralls.io/repos/github/minsiyang/acebook-TeamNameComingSoon-rails/badge.svg?branch=master)](https://coveralls.io/github/minsiyang/acebook-TeamNameComingSoon-rails?branch=master) – reached a coverage of 97.32%
 
 ## Link to project 
 
@@ -22,10 +24,6 @@ In this project we built a Ruby on Rails app with a similar behaviour to Faceboo
 - [Minsi](https://github.com/minsiyang)
 - [Chris](https://github.com/ChrisCooney05)
 - [Nadine](https://github.com/nadinedelia)
-
-## Screenshots 
-
-[here]
 
 
 ## Built With
