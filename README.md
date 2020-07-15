@@ -1,4 +1,5 @@
-# Zenbook – a peaceful Facebook Clone for stressed Devs
+# Zenbook
+## ~ a peaceful Facebook Clone for stressed Devs ~
 
 ![](screenshot.png)
 
