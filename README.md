@@ -1,4 +1,6 @@
-# Zenbook – a peaceful Facebook Clone from stressed Devs
+# Zenbook – a peaceful Facebook Clone for stressed Devs
+
+![](screenshot.png)
 
 [![Build Status](https://travis-ci.com/minsiyang/acebook-TeamNameComingSoon-rails.svg?branch=master)](https://travis-ci.com/minsiyang/acebook-TeamNameComingSoon-rails)
 
