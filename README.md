@@ -2,15 +2,19 @@
 
 [![Coverage Status](https://coveralls.io/repos/github/minsiyang/acebook-TeamNameComingSoon-rails/badge.svg?branch=master)](https://coveralls.io/github/minsiyang/acebook-TeamNameComingSoon-rails?branch=master)
 
+## Link to project 
+
+https://zenbook4u.herokuapp.com/
+
 ## About the project
 
 In this project we built a Ruby on Rails app with a similar behaviour to Facebook. Users can..
 
-[x] Sign up
-[x] Login / Logout 
-[x] Create posts and comments.
-[x] Edit post and comments.
-[x] Delete post and comments.
+- [x] Sign up
+- [x] Login / Logout 
+- [x] Create posts and comments.
+- [x] Edit post and comments.
+- [x] Delete post and comments.
 
 ## Team
 
@@ -23,10 +27,6 @@ In this project we built a Ruby on Rails app with a similar behaviour to Faceboo
 
 [here]
 
-
-## Link to project 
-
-here.
 
 ## Built With
 - HTML, CSS, Javascript
