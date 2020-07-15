@@ -1,4 +1,5 @@
 # Zenbook
+
 ## ~ a peaceful Facebook Clone for stressed Devs ~
 
 ![](screenshot.png)
@@ -7,7 +8,7 @@
 
 [![Coverage Status](https://coveralls.io/repos/github/minsiyang/acebook-TeamNameComingSoon-rails/badge.svg?branch=master)](https://coveralls.io/github/minsiyang/acebook-TeamNameComingSoon-rails?branch=master) – reached a coverage of 97.32%
 
-## Link to project 
+## Link to project
 
 https://zenbook4u.herokuapp.com/
 
@@ -16,7 +17,7 @@ https://zenbook4u.herokuapp.com/
 In this project we built a Ruby on Rails app with a similar behaviour to Facebook. Users can..
 
 - [x] Sign up
-- [x] Login / Logout 
+- [x] Login / Logout
 - [x] Create posts and comments.
 - [x] Edit post and comments.
 - [x] Delete post and comments.
@@ -28,8 +29,8 @@ In this project we built a Ruby on Rails app with a similar behaviour to Faceboo
 - [Chris](https://github.com/ChrisCooney05)
 - [Nadine](https://github.com/nadinedelia)
 
-
 ## Built With
+
 - HTML, CSS, Javascript
 - Ruby
 - Ruby on Rails
@@ -37,14 +38,14 @@ In this project we built a Ruby on Rails app with a similar behaviour to Faceboo
 - Rspec with Capybara and Factory Bot for testing
 - Devise for authentication
 
-## Project Overview 
+## Project Overview
 
 [Trello board](https://trello.com/b/xrhvWkLN/acebook-tncs)
 
 [You can find the engineering project outline here.](https://github.com/makersacademy/course/tree/master/engineering_projects/rails)
 
-
 ## How to contribute to this project
+
 See [CONTRIBUTING.md](CONTRIBUTING.md)
 
 ## Quickstart
